@@ -5,6 +5,22 @@ $(document).keydown(function(e) {
 	}
 });
 
+// key:[up, down, left, right]
+//     [0   1     2     3]
+var keymap = {
+	tk1:["tk4",null,null,"tk2"],
+	tk2:["tk5",null,"tk1","tk3"],
+	tk3:["tk6",null,"tk2",null],
+	tk4:["tk7","tk1",null,"tk5"],
+	tk5:["tk8","tk2","tk4","tk6"],
+	tk6:["tk9","tk3","tk5",null],
+	tk7:[null,"tk4",null,"tk8"],
+	tk8:[null,"tk5","tk7","tk9"],
+	tk9:[null,"tk6","tk8",null]
+};
+
+var currentselected = keymap["tk1"];
+
 
 function keypressinit() {
 	if (document.addEventListener) {
@@ -24,9 +40,36 @@ function keypressalert(e) {
 	
 	// alert(""+e.keyCode);
 	// $(#d3).html
-	var d3html = $("#d3").("#eled3").html;
+	var d3html = $("#d3").html();
 	if (!d3html) d3html="";
-	showmesg(e.keyCode+":\t"+d3html);
+	//showmesg(e.keyCode+":\t"+d3html);
+	
+	// temporary variable to currentposition;
+	var tempositioin = currentselected;
+	
+	var direction = currentselected;
+	switch (e.keyCode){
+		// turn left
+		case 37:
+		direction = currentselected[2];
+		break;
+		// turn up
+		case 38:
+		direction = currentselected[0];
+		break;
+		// turn right
+		case 39:
+		direction = currentselected[3];
+		break;
+		// turn down
+		case 40:
+		direction = currentselected[1];
+		break;
+	}
+	
+	if (direction!=null)  currentselected = direction;
+	
+	showmesg(tempositioin+"\t-->"+currentselected );
 }
 
 var lines = 0;

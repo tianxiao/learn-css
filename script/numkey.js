@@ -22,7 +22,11 @@ function keypressalert(e) {
 		e = event;
 	}
 	
-	alert(""+e.keyCode);
+	// alert(""+e.keyCode);
+	// $(#d3).html
+	var d3html = $("#d3").("#eled3").html;
+	if (!d3html) d3html="";
+	showmesg(e.keyCode+":\t"+d3html);
 }
 
 var lines = 0;

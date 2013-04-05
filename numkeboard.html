@@ -175,26 +175,18 @@
 
 <script type="text/javascript" src="script/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="script/numkey.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var diouterht = $("#eled8").html();
+		alert("hello World!"+diouterht);
+		
+	});
+</script>
 		
 		<title>Number Keyboard</title>
 	</head>
 	<body>
 		
-		<h2>di</h2>
-		
-	<div id="outer">
-  		<div id="inner"></div>
-		<div id="inner2"></div>
-		<div id="inner2"></div>
-		<div id="inner2"></div>
-		<idv id="posupleft"></idv>
-	</div>
-	
-	
-	<div id="outer">
-		<div id="d1"></div>
-	</div>
-	
 	<h2>diouter & d1</h2>
 	
 	<div id="d1outer">
@@ -227,8 +219,14 @@
 		</div>
 	</div>
 	
+	
+	<h2>key board output</h2>
+	<form name='testform'>
+		<textarea cols='90' rows="25" name="t"></textarea>
+	</form>
+	
 	<script type="text/javascript" >
-	keypressinit();
+		keypressinit();
 	</script>	
 	</body>
 </html>

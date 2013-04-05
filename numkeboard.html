@@ -2,231 +2,236 @@
 <html>
 	<head>
 		<style type="text/css">
-		* {
-  			margin:0;
-  			padding:0;
-  			border:0;
-		}
+			* {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
 
-		#outer {
-  			width:300px;
-  			height:300px;
-  			background-color:red;
-  			margin-top:20px;
-		}
-		
-		#inner {
-  			width:50px;
-  			height:50px;
-  			background-color:blue;
-  			margin-top:10px;
-		}
+			#outer {
+				width: 300px;
+				height: 300px;
+				background-color: red;
+				margin-top: 20px;
+			}
 
-		#inner2 {
-  			width:50px;
-  			height:50px;
-  			background-color:blue;
-  			margin-top:10px;
-		}
-		
-		#posupleft {
-			position: relative;
-			left:60;
-			top:60;
-			width:50px;
-  			height:50px;
-  			background-color:blue;
-  			margin-top:10px;
-		}
-		
-		
-		#d1outer {
-			top: 1px; 
-			left: 1px; 
-			width: 300px; 
-			height: 300px; 
-			position:relative; 
-			font-weight: bold;
-			background: red;
-		}
-		
-		
-#d7 {
-	top:0px;
-	left:0px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#inner {
+				width: 50px;
+				height: 50px;
+				background-color: blue;
+				margin-top: 10px;
+			}
 
-#d8 {
-	top:0px;
-	left:100px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#inner2 {
+				width: 50px;
+				height: 50px;
+				background-color: blue;
+				margin-top: 10px;
+			}
 
-#d9 {
-	top:0px;
-	left:200px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#posupleft {
+				position: relative;
+				left: 60;
+				top: 60;
+				width: 50px;
+				height: 50px;
+				background-color: blue;
+				margin-top: 10px;
+			}
 
-#d4 {
-	top:100px;
-	left:0px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#d1outer {
+				top: 1px;
+				left: 1px;
+				width: 300px;
+				height: 300px;
+				position: relative;
+				font-weight: bold;
+				background: red;
+			}
 
-#d5 {
-	top:100px;
-	left:100px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#d7 {
+				top: 0px;
+				left: 0px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
-#d6 {
-	top:100px;
-	left:200px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#d8 {
+				top: 0px;
+				left: 100px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
-#d1 {
-	top:200px;
-	left:0px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#d9 {
+				top: 0px;
+				left: 200px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
-#d2 {
-	top:200px;
-	left:100px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#d4 {
+				top: 100px;
+				left: 0px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
-#d3 {
-	top:200px;
-	left:200px;
-  width:100px;
-  height:100px;
-  position:absolute; 
-  background-color:blue;
-}
+			#d5 {
+				top: 100px;
+				left: 100px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
+			#d6 {
+				top: 100px;
+				left: 200px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
+			#d1 {
+				top: 200px;
+				left: 0px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
-#eled7, #eled8, #eled9, #eled4, #eled5, #eled6, #eled1, #eled2, #eled3 {
-	height: 100px; 
-	position: relative; 
-	border: 5px solid rgb(119, 119, 119); 
-	background-color: rgb(255, 255, 255); 
-	text-align: center; 
-	line-height: 100px; 
-	font-size: 45px; 
-	font-weight: bold;"
-}
+			#d2 {
+				top: 200px;
+				left: 100px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
+			#d3 {
+				top: 200px;
+				left: 200px;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				background-color: blue;
+			}
 
+			#eled7, #eled8, #eled9, #eled4, #eled5, #eled6, #eled1, #eled2, #eled3 {
+				height: 100px;
+				position: relative;
+				border: 5px solid rgb(119, 119, 119);
+				background-color: rgb(255, 255, 255);
+				text-align: center;
+				line-height: 100px;
+				font-size: 45px;
+				font-weight: bold;"
+			}
 
+			#d11 {
+				position: relative;
+				left: 60;
+				top: 60;
+				width: 100px;
+				height: 100px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				background-color: red;
+			}
 
+			#dd2 {
+				width: 100px;
+				height: 100px;
+				margin-top: 10px;
+				background-color: blue;
+			}
 
+		</style>
 
+		<script type="text/javascript" src="script/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="script/numkey.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var diouterht = $("#eled8").html();
+				alert("hello World!" + diouterht);
 
-#d11 {
-  position: relative;
-  left:60;
-  top:60;
-  width:100px;
-  height:100px;
-  margin-top:20px;
-  margin-bottom:20px;
-  background-color:red;
-	
-}
+			});
+		</script>
 
-#dd2 {
-  width:100px;
-  height:100px;
-  margin-top:10px;
-  background-color:blue;
-}
-
-</style>
-
-
-<script type="text/javascript" src="script/jquery-1.9.1.js"></script>
-<script type="text/javascript" src="script/numkey.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		var diouterht = $("#eled8").html();
-		alert("hello World!"+diouterht);
-		
-	});
-</script>
-		
 		<title>Number Keyboard</title>
 	</head>
 	<body>
-		
-	<h2>diouter & d1</h2>
-	
-	<div id="d1outer">
-		<div id="d7">
-			<div id="eled7">7</div>
+
+		<h2>diouter & d1</h2>
+
+		<div id="d1outer">
+			<div id="d7">
+				<div id="eled7">
+					7
+				</div>
+			</div>
+			<div id="d8">
+				<div id="eled8">
+					8
+				</div>
+			</div>
+			<div id="d9">
+				<div id="eled9">
+					9
+				</div>
+			</div>
+			<div id="d4">
+				<div id="eled4">
+					4
+				</div>
+			</div>
+			<div id="d5">
+				<div id="eled5">
+					5
+				</div>
+			</div>
+			<div id="d6">
+				<div id="eled6">
+					6
+				</div>
+			</div>
+			<div id="d1">
+				<div id="eled1">
+					1
+				</div>
+			</div>
+			<div id="d2">
+				<div id="eled2">
+					2
+				</div>
+			</div>
+			<div id="d3">
+				<div id="eled3">
+					3
+				</div>
+			</div>
 		</div>
-		<div id="d8">
-			<div id="eled8">8</div>
-		</div>
-		<div id="d9">
-			<div id="eled9">9</div>
-		</div>
-		<div id="d4">
-			<div id="eled4">4</div>
-		</div>
-		<idv id="d5">
-			<div id="eled5">5</div>
-		</idv>
-		<div id="d6">
-			<div id="eled6">6</div>
-		</div>
-		<div id="d1">
-			<div id="eled1">1</div>
-		</div>
-		<div id="d2">
-			<div id="eled2">2</div>
-		</div>
-		<div id="d3">
-			<div id="eled3">3</div>
-		</div>
-	</div>
-	
-	
-	<h2>key board output</h2>
-	<form name='testform'>
-		<textarea cols='90' rows="25" name="t"></textarea>
-	</form>
-	
-	<script type="text/javascript" >
-		keypressinit();
-	</script>	
+
+		<h2>key board output</h2>
+		<form name='testform'>
+			<textarea cols='90' rows="25" name="t"></textarea>
+		</form>
+
+		<script type="text/javascript" >
+			keypressinit();
+		</script>
 	</body>
 </html>

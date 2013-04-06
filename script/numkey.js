@@ -19,7 +19,8 @@ var keymap = {
 	tk9:[null,"tk6","tk8",null]
 };
 
-var currentselected = keymap["tk1"];
+// var currentselected = keymap["tk1"];
+var currentselected = "tk5";
 
 
 function keypressinit() {
@@ -51,25 +52,25 @@ function keypressalert(e) {
 	switch (e.keyCode){
 		// turn left
 		case 37:
-		direction = currentselected[2];
+		direction = keymap[currentselected][2];
 		break;
 		// turn up
 		case 38:
-		direction = currentselected[0];
+		direction = keymap[currentselected][0];
 		break;
 		// turn right
 		case 39:
-		direction = currentselected[3];
+		direction = keymap[currentselected][3];
 		break;
 		// turn down
 		case 40:
-		direction = currentselected[1];
+		direction = keymap[currentselected][1];
 		break;
 	}
 	
 	if (direction!=null)  currentselected = direction;
 	
-	showmesg(tempositioin+"\t-->"+currentselected );
+	showmesg(tempositioin+"-->"+currentselected );
 }
 
 var lines = 0;

@@ -7,6 +7,9 @@ $(document).keydown(function(e) {
 
 // key:[up, down, left, right]
 //     [0   1     2     3]
+// change the map to a cycle 
+// that is when the key movement hit the boundary 
+// it will another side.
 var keymap = {
 	tk1:["tk4","tk7","tk3","tk2"],
 	tk2:["tk5","tk8","tk1","tk3"],

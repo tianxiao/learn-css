@@ -8,15 +8,27 @@ $(document).keydown(function(e) {
 // key:[up, down, left, right]
 //     [0   1     2     3]
 var keymap = {
-	tk1:["tk4",null,null,"tk2"],
-	tk2:["tk5",null,"tk1","tk3"],
-	tk3:["tk6",null,"tk2",null],
-	tk4:["tk7","tk1",null,"tk5"],
+	tk1:["tk4","tk7","tk3","tk2"],
+	tk2:["tk5","tk8","tk1","tk3"],
+	tk3:["tk6","tk9","tk2","tk1"],
+	tk4:["tk7","tk1","tk6","tk5"],
 	tk5:["tk8","tk2","tk4","tk6"],
-	tk6:["tk9","tk3","tk5",null],
-	tk7:[null,"tk4",null,"tk8"],
-	tk8:[null,"tk5","tk7","tk9"],
-	tk9:[null,"tk6","tk8",null]
+	tk6:["tk9","tk3","tk5","tk4"],
+	tk7:["tk1","tk4","tk9","tk8"],
+	tk8:["tk2","tk5","tk7","tk9"],
+	tk9:["tk3","tk6","tk8","tk7"]
+};
+
+var htmlkeymap = {
+	tk1:"#eled1",
+	tk2:"#eled2",
+	tk3:"#eled3",
+	tk4:"#eled4",
+	tk5:"#eled5",
+	tk6:"#eled6",
+	tk7:"#eled7",
+	tk8:"#eled8",
+	tk9:"#eled9"
 };
 
 // var currentselected = keymap["tk1"];
@@ -71,6 +83,12 @@ function keypressalert(e) {
 	if (direction!=null)  currentselected = direction;
 	
 	showmesg(tempositioin+"-->"+currentselected );
+	
+	// change the current element background color
+	// reset the last color to the default.
+	$(htmlkeymap[currentselected]).css("background","#99FFFF");
+	$(htmlkeymap[tempositioin]).css("background","#FFFFCC");
+	
 }
 
 var lines = 0;

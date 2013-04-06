@@ -94,6 +94,9 @@ function keypressalert(e) {
 	
 }
 
+// The following code is copy from the following link:
+// http://unixpapa.com/js/testkey.html
+
 var lines = 0;
 var maxlines = 24;
 
